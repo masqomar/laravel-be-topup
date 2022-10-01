@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-      - master
-name: 🚀 Deploy website on push (Master)
+      - main
+name: 🚀 Deploy website on push (Main)
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -31,7 +31,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.server }}
+          server: ftp.sifapay.my.id
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: public_html/
