@@ -27,4 +27,4 @@ jobs:
         server: ${{ secrets.server }}
         username: ${{ secrets.username}}
         password: ${{ secrets.password}}
-        server_dir: public_html/
+        server_dir: digiflazz
