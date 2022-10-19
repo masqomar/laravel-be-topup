@@ -24,7 +24,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.server }}
-        username: ${{ secrets.username}}
-        password: ${{ secrets.password}}
+        server: ftp.sifapay.my.id
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
         server_dir: digiflazz
